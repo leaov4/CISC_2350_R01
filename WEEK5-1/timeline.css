@@ -1,0 +1,19 @@
+body{
+	background-color: MidnightBlue;
+}
+
+h1 {
+	border: 2px solid white;
+	font-family: serif;
+	color: LightCoral;
+}
+
+p {
+
+	font-family: sans-serif;
+	color: LightPink;
+}
+
+table {
+	color: White;
+}

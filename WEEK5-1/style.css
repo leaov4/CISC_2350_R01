@@ -1,0 +1,28 @@
+body{
+	background-color: MidnightBlue;
+}
+
+h1 {
+	border: 2px solid white;
+	font-family: serif;
+	color: White;
+}
+
+p {
+
+	font-family: sans-serif;
+	color: White;
+}
+
+h3 {
+	color: LightCoral;
+}
+
+ul {
+	font-family: sans-serif;
+	color: White;
+}
+
+h3 {
+	color: LightCoral;
+}
