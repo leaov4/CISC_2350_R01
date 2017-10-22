@@ -1,0 +1,53 @@
+<!--
+Lea Overend
+Info and Web Programming
+October 22, 2017
+-->	
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather|Nunito" rel="stylesheet">
+</head>
+<body>
+	
+	<ul class="flex-container">
+	  <!--Classes for flex items-->
+		<li class="flex-item header">Header</li>
+		<li class="flex-item side">Left Side</li>
+		<li class="flex-item main">Middle</li>
+		<li class="flex-item side">Right Side</li>
+	  	<li class="flex-item footer">Footer</li>
+	</ul>
+	<br>
+	<div class= "box">
+	   <!--Includes the navigation bar, and the scroll box-->
+			<nav>
+			<!--Links to all three sections-->
+			  <a href="#1">1</a>
+			  <a href="#2">2</a>
+			  <a href="#3">3</a>
+			</nav>
+
+		<div class="scrolling-box">
+		<!--Sections of the box, ids correspond with sections-->
+		  <section id="1">This is the first section<br>This uses the flex property to make the header, footer, and side/middle bars. <br> It allows us to make flexible items whose size is defined in comparison to the rest of the items in the same container. <br>  </section>
+		  <section id="2">This is the second section <br> This scrollbox is made using the scroll-behaivor CSS property, which allows us to determine the scroll location. <br> </section>
+		  <section id="3">This is the third section<br>The image to my right has been positioned with the background-position tag. <br> It reads: background-position: top 150px right. <br> It is 150px from the top, and all the way from the right. <br> </section>
+		</div>
+	 </div>
+	 <hr>
+	 <div class="text">
+	 	<!--Links-->
+	 	<p>More Info:
+		<a href="https://css-tricks.com/almanac/properties/f/flex/">Flex</a> 
+		<a href="https://css-tricks.com/almanac/properties/s/scroll-behavior/">Scroll</a>
+		<a href="https://css-tricks.com/almanac/properties/b/background-position/">Background</a>
+		</p>
+		<p>Lea Overend</p>
+	<hr>
+	</div>
+</body>
+</html>

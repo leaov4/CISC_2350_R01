@@ -1,0 +1,109 @@
+body {
+  background-color: gainsboro; 
+  background-image: url('https://css-tricks.com/wp-content/uploads/2013/06/CSS-Tricks-logo.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top 150px right; 
+  /*This text puts a fixed image in the right hand corner using background position*/
+  }
+
+.flex-container {
+  /*From css-tricks.com/almanac flex property, creates a flex contrainer to be used in conjunction with flex items.*/
+  padding: 0;
+  margin: 0;
+  list-style: none; 
+  height: 210px;
+  /*style*/
+  
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  /*properties*/
+  
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+}
+
+/*classes for flex items*/ 
+.header,
+.footer  { flex: 1 100%; }
+.side { flex: 1; }
+.middle  { flex: 4; }
+
+.flex-item {
+  /*style of flex items*/
+  background: pink;
+  padding: 10px;
+  width: 100px;
+  border: 3px solid rgba(0,0,0,.2);
+  
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+
+
+}
+
+
+.box {
+  /*entire scroll box*/
+  display: flex;
+  align-items: left;
+  justify-content: left; 
+  flex-direction: column;  
+}
+
+nav {
+  /*navigation bar*/
+  background-color: pink;
+  display: inline-block;
+  padding: 16px;
+  text-align: center;
+  width: 500px;
+
+}
+
+.text {
+  font-family: 'Nunito', sans-serif;
+}
+
+nav a {
+  /*one element of nav bar*/
+  color: #fff;
+  margin: 0 1em;
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+}
+
+.scrolling-box {
+  /*The box part itself witout the navigation*/
+  background-color: white;
+  display: inline-block;
+  height: 400px;
+  overflow-y: scroll;
+  text-align: center;
+  width: 500px;
+  padding: 16px;
+  font-family: 'Merriweather', serif;
+  border-color: black;
+  border-width: 10px;
+}
+
+
+section {
+  /*sections of text, first, second, third parts*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
