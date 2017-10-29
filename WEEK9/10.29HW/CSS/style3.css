@@ -1,0 +1,67 @@
+h1{
+	/*Styles header*/
+	font-family: 'Lobster', cursive;
+}
+
+section{
+/*These qualities are true for each box, or section. They will have the same width, margin and padding*/
+  width: 30%;
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  height: 600px;
+  font-family: 'Dancing Script', cursive;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+/*The following section ids give each section a different border color*/
+/*I changed the relative positions to off-set each box by the same amount*/
+#s1 {
+	border: solid pink 20px;
+
+}
+
+#s2 {
+	border: solid lightblue 20px;
+	position: relative;
+	top: 100px;
+}
+
+#s3 {
+	border: solid lightyellow 20px;
+	position: relative;
+	top: 200px;
+}
+
+#s4 {
+	border: solid pink 20px;
+}
+
+#s5 {
+	border: solid lightblue 20px;
+	position: relative;
+	top: 100px;
+}
+
+#s6 {
+	border: solid lightyellow 20px;
+	position: relative;
+	top: 200px;
+}
+
+#s7 {
+	border: solid pink 20px;
+	position: relative;
+	height: 400px;
+	
+}
+
+#s8 {
+	font-family: 'Lobster', cursive;
+	position: relative;
+	height: 50px;
+	top: 500px;
+}

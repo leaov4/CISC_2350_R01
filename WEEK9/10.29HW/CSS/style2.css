@@ -1,0 +1,74 @@
+
+h1{
+	/*Styles header*/
+	font-family: 'Lobster', cursive;
+}
+
+section{
+	/*These qualities are true for each box, or section. They will have the same width, margin and padding*/
+	width: 800px;
+  	margin: 20px auto;
+  	padding: 50px;
+  	font-family: 'Dancing Script', cursive;
+	  -webkit-box-sizing: border-box;
+    	 -moz-box-sizing: border-box;
+        	  box-sizing: border-box;
+
+}
+
+/*The following section ids give each section a different border color*/
+/*The section ids float certain boxes left, allowing overlap of sections.
+I use the z index property as well so the boxes in the back lay behind the ones in front.
+The positions are relative, to create the layout by moving boxes from left, right, or top from their assumed position. */
+#s1 {
+	border: solid pink 20px;
+	float: left;
+	position: relative;
+}
+
+#s2 {
+	border: solid lightblue 20px;
+	position: relative;
+	top: -20px;
+  	left: 20px;
+  	z-index: -1;
+}
+
+#s3 {
+	border: solid lightyellow 20px;
+	position: relative;
+  	z-index: 1; /*brings to front*/
+  	float: left;
+  	right: -100px;
+}
+
+#s4 {
+	border: solid pink 20px;
+	position: relative;
+	top: -20px;
+	left: 120px; 
+}
+
+#s5 {
+	border: solid lightblue 20px;
+	float: left;
+}
+
+#s6 {
+	border: solid lightyellow 20px;
+	position: relative;
+  	z-index: -1; /*Brings to back*/
+  	top: -20px;
+  	left: 20px;
+}
+
+#s7 {
+	border: solid pink 20px;
+	position: relative;
+	top: -100px;
+	left: 150px;
+}
+
+.links {
+	font-family: 'Lobster', cursive;
+}

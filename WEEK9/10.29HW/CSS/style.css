@@ -1,0 +1,48 @@
+h1{
+	/*Styles header*/
+	font-family: 'Lobster', cursive;
+}
+
+section{
+/*These qualities are true for each box, or section. They will have the same width, margin and padding*/
+  width: 800px;
+  margin: 20px auto;
+  padding: 50px;
+  font-family: 'Dancing Script', cursive;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*The following section ids give each section a different border color*/
+#s1 {
+	border: solid pink 20px;
+}
+
+#s2 {
+	border: solid lightblue 20px;
+}
+
+#s3 {
+	border: solid lightyellow 20px;
+}
+
+#s4 {
+	border: solid pink 20px;
+}
+
+#s5 {
+	border: solid lightblue 20px;
+}
+
+#s6 {
+	border: solid lightyellow 20px;
+}
+
+#s7 {
+	border: solid pink 20px;
+}
+
+.links {
+	font-family: 'Lobster', cursive;
+}
