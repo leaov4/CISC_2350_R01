@@ -1,0 +1,52 @@
+/*
+#multiimage {
+  background: 
+   url(http://img1.sunset.timeinc.net/sites/default/files/styles/4_3_horizontal_inbody_900x506/public/image/2016/07/main/western-palm-trees-mexican-fan-palms-elysian-park-0214.jpg?itok=t5eEe1xa) bottom center no-repeat,
+   url(http://sunsetwatersports.com/wp-content/uploads/2015/05/sun-transparent-background-sun_with_transparent_background.png) repeat; 
+}*/
+
+body{
+	font-family: 'Playfair Display', serif;
+}
+div {
+  width: 100%;
+ /* margin-bottom: 1.5em;*/
+}
+
+#p {
+	width: 55%;
+	color: white;
+}
+#p2{
+	width: 55%;
+	position: relative;
+	left: 390px;
+}
+#header {
+	background-image: url(vacation2.png);
+	height: 400px;
+}
+
+#images1{
+background-image: url(bigsun.png), url(http://img1.sunset.timeinc.net/sites/default/files/styles/4_3_horizontal_inbody_900x506/public/image/2016/07/main/western-palm-trees-mexican-fan-palms-elysian-park-0214.jpg?itok=t5eEe1xa) ;
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+    height: 470px;
+}
+
+#images2{
+background-image: url(middlesun.png), url(http://www.cheapflightslab.com/wp-content/uploads/2017/02/carnival-caribbean-port-st-thomas-4.jpg) ;
+    background-position: left bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+    height: 400px;
+}
+
+#images3{
+background-image: url(sun.png), url(http://images6.fanpop.com/image/photos/40100000/Dominican-Republic-the-dominican-republic-40188373-1024-340.jpg) ;
+    background-position: right bottom, left top;
+    background-repeat: repeat, repeat;
+    padding: 15px;
+    height: 300px;
+}
