@@ -1,0 +1,94 @@
+/*Lea Overend*/
+
+body { 
+  background-image: url(motel1.jpg) ;
+  background-repeat: no-repeat;
+
+  }
+div {
+  /*Styles text*/
+  padding: 10px;
+  font-size: 130px;
+  font-family: 'Bungee Inline', cursive;
+  text-align: center;
+}
+
+div p { margin:0; }
+
+/*Each id is for individual letters of "Motel"
+Text shadow adds the "glow"
+Relative position is used to position each letter
+The animation is five seconds */
+#first  {
+  color: #fff;
+  text-shadow: 0 0 200px #ffffff,0 0 200px #008000,0 0 200px #0000ff;
+  animation: L 5s linear infinite;
+  position: relative;
+  right: 300px;
+  top: 75px;
+}
+#second  {
+  color: #fff;
+  text-shadow: 0 0 200px #ffffff,0 0 200px #008000,0 0 200px #0000ff;
+  /*Three animations are used between the five letters to alternate the times of the flickering*/
+  animation: E 5s linear infinite;
+  position: relative;
+  right: 160px;
+  bottom: 30px;
+
+  
+}
+#third {
+  color: #fff;
+  text-shadow: 0 0 200px #ffffff,0 0 200px #008000,0 0 200px #0000ff;
+  animation: A 5s linear infinite;
+  position: relative;
+  bottom: 150px;
+}
+
+#fourth {
+  color: #fff;
+  text-shadow: 0 0 200px #ffffff,0 0 200px #008000,0 0 200px #0000ff;
+  animation: E 5s linear infinite;
+  position: relative;
+  bottom: 250px;
+  right: -150px;
+}
+
+#fifth {
+  color: #fff;
+  text-shadow: 0 0 200px #ffffff,0 0 200px #008000,0 0 200px #0000ff;
+  animation: A 5s linear infinite;
+  position: relative;
+  bottom: 350px;
+  left: 300px;
+}
+
+/*The keyframes decide at what point in the animation the letters will have a certain opacity*/
+@keyframes L {
+  /*During the first 9.999% of the animation, the opacity is at 0.99*/
+  0%,9.999%, 11%, 79.999%, 81% 100% {
+    opacity:.99; text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+  }
+  10%,10.999%, 80%, 80.999% {
+    opacity:0.4; text-shadow: none; 
+  }
+} 
+
+@keyframes E {
+  0%,29.999%, 31%, 79.999%, 81% 100% {
+    opacity:.99; text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+  }
+  30%,30.999%, 80%, 80.999% {
+    opacity:0.4; text-shadow: none; 
+  }
+} 
+
+@keyframes A {
+  0%,59.999%, 61%, 79.999%, 81% 100% {
+    opacity:.99; text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+  }
+  60%,60.999%, 80%, 80.999% {
+    opacity:0.4; text-shadow: none; 
+  }
+}
