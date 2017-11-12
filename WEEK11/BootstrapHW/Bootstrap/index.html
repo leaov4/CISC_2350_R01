@@ -1,0 +1,61 @@
+<!--Lea Overend-->
+<!--Responsive Bootstrap Image Grid-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+</head>
+<body>
+	<center>
+		<h1>RESPONSIVE BOOTSRAP GRID</h1>
+	</center>
+	<div class="container-fluid">
+		<div class="row">
+			<!--First Row: Split into 3rds for medium view or larger,
+			Then split in halves for small view, creating another row with 3rd image
+			For xs view, each image is stacked-->
+			<div class= "col-sm-6 col-md-4">
+				<img src="images/elephanttrunk.jpg" class="img-responsive" width="400" height="400">
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<img src="images/girls.jpg" class="img-responsive" width="400" height="400">
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<img src="images/elephantfood.jpg" class="img-responsive" width="400" height="400">
+			</div>
+		</div>
+		<div class="row">
+			<!--Second Row: Split in Halves for medium view or larger
+			For sm and xs view, images stacked in their own rows-->
+			<div class="col-md-6">
+				<img src="images/me.jpg" class="img-responsive" width="600" height="600">
+			</div>
+			<div class="col-md-6">
+				<img src="images/table.jpg" class="img-responsive" width="600" height="600">
+			</div>
+		</div>
+		<div class="row">
+			<!--Third Row: Split in Fourths for medium view or larger
+			For small view, split in halves, two rows of two images
+			For xs view, all four images stacked in their own row-->
+			<div class="col-sm-6 col-md-3">
+				<img src="images/penguin.jpg" class="img-responsive" width="300" height="300">
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<img src="images/lion.jpg" class="img-responsive" width="300" height="300">
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<img src="images/ocean.jpg" class="img-responsive" width="300" height="300">
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<img src="images/zebras.jpg" class="img-responsive" width="300" height="300">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
