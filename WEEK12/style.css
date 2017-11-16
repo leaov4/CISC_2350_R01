@@ -1,0 +1,181 @@
+.fixed {
+	/*Used to keep the home button on top left of user's screen at all times*/
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+}
+.fixedright {
+	/*Used to keep social media on top right of user's screen at all times*/
+	position: fixed;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 50px;
+}
+body{
+	background-color: black;
+}
+h1 {
+	/*Style header*/
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	color: white;
+}
+p {
+	/*Styles paragraph text, uses Google font linked to in html files*/
+	color: white;
+	font-family: 'Varela', sans-serif;
+	font-size: 20px;
+	/*The following two lines allow all paragraph text to slowly fade in from black to white over 5 seconds*/
+	animation-name: fade;
+    animation-duration: 5s;
+}
+
+
+.myButton {
+	/*This class is for every button on the nav bar, except a button of the current page being viewed*/
+	background-color:#5cbf2a;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Montserrat', sans-serif;
+	font-size:17px;
+	padding:20px 37px;
+	text-decoration: none;
+	transition: all 0.5s ease 0s;
+	text-shadow: 2px 2px black;
+	/*Gradient background color on buttons*/
+	background-image: -webkit-linear-gradient(top, #43cf14, #03070a);
+    background-image: -moz-linear-gradient(top, #43cf14, #03070a);
+    background-image: -ms-linear-gradient(top, #43cf14, #03070a);
+    background-image: -o-linear-gradient(top, #43cf14, #03070a);
+    background-image: linear-gradient(to bottom, #43cf14, #03070a);
+
+}
+
+
+.myCurrentButton {
+	/*Button for current web page*/
+	background-color: #5cbf2a;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Montserrat', sans-serif;
+	font-size:17px;
+	padding:20px 37px;
+	text-decoration: none;
+	transition: all 0.5s ease 0s;
+	text-shadow: 2px 2px black;
+	/*Gradient is reversed from myButton, to represent a contrast to distinguish from the others*/
+	background-image: -webkit-linear-gradient(top, #03070a, #43cf14);
+    background-image: -moz-linear-gradient(top, #03070a, #43cf14);
+    background-image: -ms-linear-gradient(top, #03070a, #43cf14);
+    background-image: -o-linear-gradient(top, #03070a, #43cf14);
+    background-image: linear-gradient(to bottom, #03070a, #43cf14);
+
+
+}
+
+/*Fade in amimation for text*/
+@keyframes fade {
+    from {color: black;}
+    to {color: white;}
+}
+
+button {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    width: 104px;
+}
+
+ul, th {
+	/*Styles paragraph text, uses Google font linked to in html files*/
+	color: white;
+	font-family: 'Varela', sans-serif;
+	font-size: 20px;
+	/*The following two lines allow text to slowly fade in from black to white over 5 seconds*/
+	animation-name: example;
+    animation-duration: 5s;
+}
+
+figcaption {
+	/*Styles paragraph text, uses Google font linked to in html files*/
+	color: white;
+	font-family: 'Varela', sans-serif;
+	font-size: 20px;
+	/*The following two lines allow text to slowly fade in from black to white over 5 seconds*/
+	animation-name: example;
+    animation-duration: 5s;
+
+}
+.column {
+    float: left;
+    width: 30%;
+    padding: 15px;
+}
+.largeColumn {
+	float: left;
+	width: 45%;
+	padding: 15px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left {
+	float: left;
+    width: 50%;
+    padding: 15px;
+}
+
+.right {
+	float: right;
+	padding: 15px;
+}
+.top {
+	margin-bottom: 10px;
+ 	width: 300px;
+ 	height:500px;
+ 	display:block;
+ 	background:transparent url('whoWeAre.png') center top no-repeat;
+ 	border: none;
+}
+
+.top:hover {
+   background-image: url('whoWeAre2.png');
+   
+}
+
+.myButton:hover {
+	background-color:#5cbf2a;
+	box-shadow: inset 0 0 0 5px darkgreen;
+	transform: scale(1.1);
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.inputbox {
+	width: 250px;
+}
+
+#textContainer {
+	height: 200px;
+	width: 400px;
+	margin: 0px auto;
+	margin-top: 1%;
+	text-align: center;
+	color: white;
+}
+
