@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Studio</title>
+	<link rel="stylesheet" type="text/css" href="../Style/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	<script type="text/javascript" src="../Javascript/script.js"></script>
+</head>
+<body>
+	<!--Dropdown, header, contact link-->
+	<h1 id="header">LEA'S PORTFOLIO</h1>
+		<div class="contact2">
+		<a class="contact" href="contact.html">CONTACT</a></div>
+		<div class="dropdown">
+		<button class="dropbtn">MENU</button>
+		  <div class="dropdown-content">
+		  	<!--These link to specific images on the page using their corresponding ids-->
+		    <a href="../HTML/index.html">HOME</a>
+		    <a href="../HTML/interactive.html">STUDIO</a>
+		    <a href="../HTML/gallery.html">GALLERY</a>
+		  </div>
+		</div>
+	<!--Studio class is background art studio graphic, set to a lower z index then it's layered elements-->
+	<div class="studio"></div>
+	<!--I used different methods to position many of elements on top of eachother without lengenthening the page- using custom columns and absolute and relative positioning in CSS-->
+	<div class="row">
+	<!--Acrylic paints structured by a row of 3 columns-->
+		<div class="columnThirds">
+			<img id="first" src="../Images/castle.jpg">
+		</div>
+		<div class="columnThirds">
+			<img id="second" src="../Images/stilllife2.jpg">
+		</div>
+		<div class="columnThirds">
+			<img id="third" src="../Images/closet.jpg">
+		</div>
+	</div>
+	<!--Ink and pencil are structured by smaller narrow columns but repositioned with CSS-->
+	<div class="row">
+		<div class="smallColumn">
+			<img id="four" src="../Images/nyc.jpg">
+		</div>
+		<div class="smallColumn">
+			<img id="five" src="../Images/man.jpg">
+		</div>
+		<div class="smallColumn">
+			<img id="six" src="../Images/girl.jpg">
+		</div>
+	</div>
+	<div class="row">
+		<div class="smallColumn">
+			<img id="skeleton" src="../Images/skeleton.jpg">
+		</div>
+		<div class="smallColumn">
+			<img id="studio1" src="../Images/studio2.jpg">
+		</div>
+	</div>
+	<!--The following are images structured by positioning in css by their given id name-->
+		<img id="womancollage" src="../Images/womancollage.jpg">
+		<img id="shoes" src="../Images/shoes.jpg">
+		<img id="fashion" src="../Images/fashion.jpg">
+		<img id="ramen" src="../Images/ramen.jpg">
+
+		
+	<!--Art Supplies: show appropriate works of art on hover with JavaScript Functions-->
+	<center>
+		<h1 id="text">MEDIUM</h1>
+		<h2 id="description">Hover over a tool to see art made in that medium!</h2>
+	</center>
+
+	<!--The following functions change the opacity of the appropriate artworks onmouseover-->
+		<div onmouseover="changeAcrylicOpacity()" onmouseout="getAcrylicOpacity()" class="acrylic"></div>
+		<div onmouseover="changeInkOpacity()" onmouseout="getInkOpacity()" class="ink"></div>
+		<div onmouseover="changePencilOpacity()" onmouseout="getPencilOpacity()" class="pencil"></div>
+		<div onmouseover="changeMixedOpacity()" onmouseout="getMixedOpacity()" class="mixed"></div>
+		<div onmouseover="changeCharcoalOpacity()" onmouseout="getCharcoalOpacity()" class="charcoal"></div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<!--Link Google fonts and style sheets, my own and the bootstrap grid-->
+	<link rel="stylesheet" type="text/css" href="../Style/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--set viewport for bootstrap-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../Style/bootstrap-grid.css">
+</head>
+<body>
+<!--Dropdown menu, header, contact link-->
+<h1 id="header">LEA'S PORTFOLIO</h1>
+	<div class="contact2">
+	<button class="contact">CONTACT</button></div>
+	<div class="dropdown">
+	<button class="dropbtn">MENU</button>
+	  <div class="dropdown-content">
+	  	<!--These link to specific images on the page using their corresponding ids-->
+	    <a href="../HTML/index.html">HOME</a>
+	    <a href="../HTML/interactive.html">STUDIO</a>
+	    <a href="../HTML/gallery.html">GALLERY</a>
+	  </div>
+	</div>
+	<div class="row">
+		<!--Self Portrait that sways using keyframe animations-->
+		<div class="column">
+			<div class="hangingart">
+	  			<div class="pin"></div>
+	  			<div class="sway">
+			    	<div class="wire"></div>
+			    	<div class="canvas"></div>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="column">
+  			<center>
+  				<!--header-->
+  				<h1 id="contactme">LEA M. OVEREND</h1>
+  			</center>
+  			<div>
+  				<hr>
+  				<p>Email me at loverend@fordham.edu</p>
+  				<p>Fordham University, Bronx, NY</p>
+  				<hr>
+  			</div>
+  			<!--Container to hold form tags so user can input their info and submit-->
+  			<div class="container" id="forms">
+			  <h2 id="contactme">Contact me</h2>
+			  <form>
+			  <!--Use bootstrap classes for form tags-->
+			    <div class="form-group">
+			      <label for="email">Email:</label>
+			      <input type="email" class="form-control" id="email" placeholder="Enter email">
+			    </div>
+			    <div class="form-group">
+			      <label for="pwd">Name:</label>
+			      <input type="email" class="form-control" id="pwd" placeholder="Enter name">
+			    </div>
+			    <div class="form-group">
+			      <label for="pwd">Message:</label>
+			      <input type="email" class="form-control" id="pwd" placeholder="Enter message">
+			    </div>
+			    <div class="checkbox">
+			      <label><input type="checkbox">Fellow Artist?</label>
+			    </div>
+			    <!--submit input to form-->
+			    <button type="submit" class="btn btn-default">Submit</button>
+			  </form>
+			</div>
+  		</div>
+	</div>
+</body>
+</html>

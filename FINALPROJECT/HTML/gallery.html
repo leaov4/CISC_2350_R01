@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+	<link rel="stylesheet" type="text/css" href="../Style/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../Style/bootstrap-grid.css">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+</head>
+<body>
+<!--Dropdown menu, header, contact link-->
+<h1 id="header">LEA'S PORTFOLIO</h1>
+	<div class="contact2">
+	<a class="contact" href="contact.html">CONTACT</a></div>
+	<div class="dropdown">
+	<button class="dropbtn">MENU</button>
+	  <div class="dropdown-content">
+	  	<!--These link to specific images on the page using their corresponding ids-->
+	    <a href="../HTML/index.html">HOME</a>
+	    <a href="../HTML/interactive.html">STUDIO</a>
+	    <a href="../HTML/gallery.html">GALLERY</a>
+	  </div>
+	</div>
+	<center>
+		<h2 id="galleryDescription">Hover over artwork for description</h2>
+		<br><br>
+	</center>
+	<!--RESPONSIVE BOOTSTRAP GRID FOR GALLERY OF ALL ARTWORKS-->
+	<div class="container-fluid">
+		<div class="row">
+			<!--First Row: Split into 3rds for medium view or larger,
+			Then split in halves for small view, creating another row with 3rd image
+			For xs view, each image is stacked-->
+			<div class= "col-sm-6 col-md-4 thumbnail text-center">
+					<img src="../Images/castle.jpg" id="mask" class="img-responsive" width="400" height="400">
+					<div class="caption">
+            			<p>This is part of a series of 5 paintings that tell a story of a princess escaping a castle. Acrylic on canvas.</p>
+        			</div>
+  			</div>
+			<div class="col-sm-6 col-md-4 thumbnail text-center">
+				<img src="../Images/balcony.jpg" class="img-responsive" width="400" height="400">
+					<div class="caption">
+            			<p>Part Two, Princess in Red, Acrylic on Canvas</p>
+        			</div>
+			</div>
+			<div class="col-sm-6 col-md-4 thumbnail text-center">
+				<img src="../Images/closet.jpg" class="img-responsive" width="400" height="400">
+				<div class="caption">
+            			<p>Part Three, Princess in Red, Acrylic on Canvas</p>
+        			</div>
+			</div>
+		</div>
+		<div class="row">
+			<!--Second Row: Split in Halves for medium view or larger
+			For sm and xs view, images stacked in their own rows-->
+			<div class="col-md-6 thumbnail text-center">
+				<img src="../Images/me.jpg" class="img-responsive" width="600" height="800">
+				<div class="caption">
+					<p>This Assignment was to paint 50 sheets of grey paper, from white to black, cut out pieces from them with an exacto knife to form a self portrait. Visual Thinking, Fordham University. </p>
+				</div>
+			</div>
+			<div class="col-md-6 thumbnail text-center">
+				<img src="../Images/stillLife.jpg" class="img-responsive" width="600" height="800">
+				<div class="caption">
+					<p>Still Life in Acrylic. Studio Art, Conestoga High School</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!--Third Row: Split in Fourths for medium view or larger
+			For small view, split in halves, two rows of two images
+			For xs view, all four images stacked in their own row-->
+			<div class="col-sm-6 col-md-3 thumbnail text-center">
+				<img src="../Images/studio1.jpg" class="img-responsive" width="300" height="400">
+				<div class="caption">
+					<p>Negative Space in Colored Pencil</p>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 thumbnail text-center">
+				<img src="../Images/nyc.jpg" class="img-responsive" width="300" height="400">
+				<div class="caption">
+					<p>Sumi Ink</p>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 thumbnail text-center">
+				<img src="../Images/everyone.jpg" class="img-responsive" width="300" height="400">
+				<div class="caption">
+					<p>Acrylic on canvas</p>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 thumbnail text-center">
+				<img src="../Images/fashion.jpg" class="img-responsive" width="300" height="400">
+				<div class="caption">
+					<p>Water color paintings and magazine collage</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!--Fourth row: Split in halves, follows 1st row functionality-->
+			<div class="col-md-6 thumbnail text-center">
+				<img src="../Images/backpack.jpg" class="img-responsive" width="600" height="800">
+				<div class="caption">
+					<p>Acrylic Paint, Studio Art, Conestoga High School</p>
+				</div>
+			</div>
+			<div class="col-md-6 thumbnail text-center">
+				<img src="../Images/womancollage.jpg" class="img-responsive" width="600" height="800">
+				<div class="caption">
+					<p>Collage from magazine clippings, Visual Thinking, Fordham University</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!--Fifth Row: Split into 3rds for medium view or larger,
+			Then split in halves for small view, creating another row with 3rd image
+			For xs view, each image is stacked-->
+			<div class= "col-sm-6 col-md-4 thumbnail text-center">
+				<img src="../Images/mask.jpg" class="img-responsive" width="400" height="400">
+				<div class="caption">
+					<p>Part Four, Princess in Red, Acrylic on Canvas</p>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 thumbnail text-center">
+				<img src="../Images/girlrunning.jpg" class="img-responsive" width="400" height="400">
+				<div class="caption">
+					<p>Part Five, Princess in Red, Acrylic on Canvas</p>
+				</div>
+			</div> 
+			<div class="col-sm-6 col-md-4 thumbnail text-center">
+				<img src="../Images/skeleton.jpg" class="img-responsive" width="400" height="400">
+				<div class="caption">
+					<p>Black and White Colored pencil on grey paper, Studio Art, Conestoga High School</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!--6th Row: Split into 4ths for medium view or larger,
+			Then split in halves for small view, creating another row with 3rd image
+			For xs view, each image is stacked-->
+			<div class= "col-sm-6 col-md-3 thumbnail text-center">
+				<img src="../Images/firstselfportrait.jpg" class="img-responsive" width="300" height="300">
+				<div class="caption">
+					<p>My first self portrait</p>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 thumbnail text-center">
+				<img src="../Images/shoes2.jpg" class="img-responsive" width="300" height="300">
+				<div class="caption">
+					<p>Life-size shoes made of paper and glue, April 2017</p>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 thumbnail text-center">
+				<img src="../Images/shoes.jpg" class="img-responsive" width="300" height="300">
+				<div class="caption">
+					<p>Life-size shoes made of paper and glue, April 2017</p>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3 text-center thumbnail">
+				<img src="../Images/kids.jpg" class="img-responsive" width="300" height="300">
+				<div class="caption">
+					<p>Watercolor and sharpie</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!--Seventh row: Split in halves, follows 1st row functionality-->
+			<div class="col-md-6 thumbnail text-center">
+				<img src="../Images/beatles.jpg" class="img-responsive" width="600" height="600">
+				<div class="caption">
+					<p>Acrylic on canvas</p>
+				</div>
+			</div>
+			<div class="col-md-6 thumbnail text-center">
+				<img src="../Images/rollingstones.jpg" class="img-responsive" width="600" height="600">
+				<div class="caption">
+					<p>Acrylic on canvas</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!--8th Row: Split into 3rds for medium view or larger,
+			Then split in halves for small view, creating another row with 3rd image
+			For xs view, each image is stacked-->
+			<div class= "col-sm-6 col-md-4 thumbnail text-center">
+				<img src="../Images/nyc.jpg" class="img-responsive" width="400" height="500">
+				<div class="caption">
+					<p>Sumi Ink</p>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 thumbnail text-center">
+				<img src="../Images/man.jpg" class="img-responsive" width="400" height="500">
+				<div class="caption">
+					<p>Sumi Ink, Drawing 1, Fordham University</p>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4 thumbnail text-center">
+				<img src="../Images/girl.jpg" class="img-responsive" width="400" height="500">
+				<div class="caption">
+					<p>Sumi Ink, Drawing 1, Fordham Univsersity, five minute blind contour drawing</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!--9th row: One column to take up the width of the screen-->
+			<div class="col-sm-12 col-md-12 thumbnail text-center">
+				<img src="../Images/ramen.jpg" class="img-responsive" width="1200" height="600">
+				<div class="caption">
+					<p>Charcoal drawing of uncooked ramen noodles up close, Drawing 1, Fordham University, October 2017</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!--10th row: One column to take up the width of the screen-->
+			<div class="col-sm-12 col-md-12">
+				<img src="../Images/fish.jpg" class="img-responsive" width="1200" height="600">
+				<div class="caption">
+					<p>Acrylic on Canvas</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!--11th row: two columns share the width of the page-->
+			<div class="col-md-6 thumbnail text-center">
+				<img src="../Images/roses.jpg" class="img-responsive" width="600" height="600">
+				<div class="caption">
+					<p>2015, sharpie and water color</p>
+				</div>
+			</div>
+			<div class="col-md-6 thumbnail text-center">
+				<img src="../Images/crab.jpg" class="img-responsive" width="600" height="600">
+				<div class="caption">
+					<p>2015, sharpie and water color</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
